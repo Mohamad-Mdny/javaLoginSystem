@@ -15,6 +15,17 @@ public class DatabaseConnection {
         }
         return conn;
     }
+
+    public static void createUsersTable() {
+        String sql = "CREATE TABLE IF NOT EXISTS users (\n"
+               + "    id INTEGER PRIMARY KEY AUTOINCREMENT,\n"
+               + "    username TEXT NOT NULL UNIQUE,\n"
+               + "    email TEXT NOT NULL,\n"
+               + "    created_at DATETIME DEFAULT CURRENT_TIMESTAMP\n"
+               + ")";
+
+        
+    }
     
     public static void main(String[] args) {
         connect();

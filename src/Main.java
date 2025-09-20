@@ -8,6 +8,7 @@ public class Main {
         Login Login = new Login();
         Register Register = new Register();
 
+
         // Starting screen when terminal is opened
         System.out.println("1. Login");
         System.out.println("2. Register");
